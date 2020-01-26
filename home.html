@@ -5,7 +5,10 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="sourceType: webcam;">
       
-
+	<a-camera gps-camera rotation-reader></a-camera>
+    
+    <a-box color="yellow" gps-entity-place="latitude:40.918946; longitude: 29.163904"/>
+	<!-->
 
 	<a-assets>
 	    <a-asset-item id="villa" src="/viking_room/scene.gltf"></a-asset-item>
@@ -24,19 +27,17 @@
 
 
  	  <a-marker type='barcode' value='5'>
-		<!--->
+	
 
  		<a-entity 
             obj-model="obj: url(/yacht_model/small-yacht/source/yacht-small/yacht-wood-rail.obj);mtl: url(/yacht_model/small-yacht/source/yacht-small/yacht-wood-rail.mtl)">
         </a-entity>
 
-        </!-->
-
 
       </a-marker>
       
 
-
+</!-->
 
       <a-entity camera></a-entity>
     </a-scene>
