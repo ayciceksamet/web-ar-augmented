@@ -1,11 +1,11 @@
 <!doctype HTML>
 <html>
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="sourceType: webcam;">
       
-	<a-camera gps-camera rotation-reader></a-camera>
+	<a-camera gps-camera="minDistance: 20;" rotation-reader></a-camera>
     
     <a-box color="yellow" gps-entity-place="latitude:36.882612; longitude:30.708922"/>
 	
